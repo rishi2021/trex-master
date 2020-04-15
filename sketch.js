@@ -27,9 +27,9 @@ function preload(){
   
   game_over_image = loadImage("gameOver.png");
   restart_image = loadImage("restart.png");
-  jump_sound  = loadSound("jump.mp3");
-  death_sound = loadSound("die.mp3");
-  checkpoint_sound = loadSound("checkPoint.mp3");
+ // jump_sound  = loadSound("jump.mp3");
+ // death_sound = loadSound("die.mp3");
+ // checkpoint_sound = loadSound("checkPoint.mp3");
 }
 
 function setup() {
