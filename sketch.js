@@ -29,7 +29,7 @@ function preload(){
   restart_image = loadImage("restart.png");
   jump_sound  = loadSound("jump.mp3");
   death_sound = loadSound("die.mp3");
-  checkpoint_sound = loadSound("checkpoint.mp3");
+  checkpoint_sound = loadSound("checkPoint.mp3");
 }
 
 function setup() {
@@ -73,11 +73,11 @@ function draw() {
   if (game_state === PLAY){
   score = score + Math.round(getFrameRate()/60);
     if (score>0 && score%100 === 0){
-      checkpoint_sound.play();
+      //checkpoint_sound.play();
     }
     if(keyDown("space")&& trex.y >= 159) {
     trex.velocityY = -10;
-    jump_sound.play();
+    //jump_sound.play();
     }
   
   trex.velocityY = trex.velocityY + 0.8
@@ -90,7 +90,7 @@ function draw() {
   spawnClouds();
   spawnObstacles();
   if (obstaclesGroup.isTouching(trex)){
-    death_sound.play();
+    //death_sound.play();
   game_state = END;
   } 
   }
